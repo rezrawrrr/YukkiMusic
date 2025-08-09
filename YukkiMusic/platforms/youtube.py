@@ -46,7 +46,7 @@ async def download_song(link: str):
             #print(f"File already exists: {file_path}")
             return file_path
         
-    song_url = f"{https://api.thequickearn.xyz}/song/{video_id}?api={30DxNexGenBotsb850f6}"
+    song_url = f"{API_URL}/song/{video_id}?api={API_KEY}"
     async with aiohttp.ClientSession() as session:
         for attempt in range(10):
             try:
